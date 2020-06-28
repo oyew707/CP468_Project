@@ -24,7 +24,7 @@ from sklearn.naive_bayes import GaussianNB, MultinomialNB
 
 
 # functions and cells
-def cleanMe(html):  # from github**
+def cleanMe(html):  # from https://github.com/jamesacampbell/python-examples/blob/8dfbfc82c2aaa7fb17d0ad0086d781398d5812ae/html2plaintext-example.py
     soup = BeautifulSoup(html, "html.parser")  # create a new bs4 object from the html data loaded
     for script in soup(["script", "style"]):  # remove all javascript and stylesheet code
         script.extract()
