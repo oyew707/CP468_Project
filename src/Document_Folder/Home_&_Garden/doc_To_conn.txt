@@ -1,0 +1,21 @@
+To connect my 120v/L5-30a to the 3500w generator, why not a
+ul1449 surge suppressor? | Yahoo Answers Home Mail News Sports Finance Celebrity Style Movies Weather Mobile Ask Sign in Mail All Categories Arts & Humanities Beauty & Style Business & Finance Cars & Transportation Computers & Internet Consumer Electronics Dining Out Education & Reference Entertainment & Music Environment Family & Relationships Food & Drink Games & Recreation Health Home & Garden Local Businesses News & Events Pets Politics & Government Pregnancy & Parenting Science & Mathematics Social Science Society & Culture Sports Travel Yahoo Products Marius L Marius L
+asked in
+Home & Garden Do It Yourself (DIY)
+·
+1 decade ago To connect my 120v/L5-30a to the 3500w generator, why not a
+ul1449 surge suppressor? Instead of inserting two 15a circuit breakers in a separate box, why not a
+ul1449 surge suppressor (for my peak/running 13a/2a freezer, 11a/5a
+frig, 21a/8.3a oil heating and fan)? Am I right to say: 1-transformer reduces volts 2-circuit breaker reduces amps, breaks over-volts and protects wires 3- surge suppressor breaks over-volts and protects equipments? Can I connect a normal male plug extension directly into the 20a female output of my generator for the 3 equipments above: ( 20a is not much than 30a, and no additional breaker in-between, while the generator has already its 30a/20a breakers)? Answer Save 2 Answers Relevance Warren914 Lv
+6 1 decade ago Favorite Answer You need to safely limit current in your 15A circuits.
+To do this a fuse or circuit breaker is needed.
+The L5-30 outlet will supply 120VAC at up to 30 amps.
+Direct connection to a 15A outlet will not provide adequate over current protection. The surge suppressor is used to help protect devices against short high voltage spikes on the line.
+It isn't a bad idea to install.
+If it is built into a power bar with a built in circuit breaker it may the over current protection needed.
+(The circuit breaker, not the surge suppressor will be supplying the protection.) Source(s):
+http://members.rennlist.org/warren/generator.html 0 0 0 Login to reply the answers Post rdoan71 Lv
+4 1 decade ago I'm struggling to understand some of your terminologies, but I understand enough to know your theories are incorrect. 20 am is indeed much less than 30 amps especially at 220 volt.
+6600 watts @ 220v 3600 watts @ 120v.
+That's a considerable difference. A transformer can reduce the voltage yes. A circuit breaker does not reduce amps. A surge protector protects equipment from surges, not from over loading. I would strongly suggest you connect your loads to this generator according to local codes and manufacturer recommendations. Good luck. http://www.rickdoan.com Source(s):
+Licensed Electrician. 0 0 0 Login to reply the answers Post Still have questions? Get your answers by asking now. Ask Question + 100 Join Yahoo Answers and get 100 points today. Join Trending Questions Trending Questions How dangerous is it to use a portable generator? 17 answers What is the proper official name of this rusty clamp? 6 answers What else can be used to hold red bricks in place other then mortar? 30 answers 120v timer ? 4 answers Can someone help me find something? 11 answers Answer Questions Answer Questions How to tile a kitchen wall which is 1/2” out at one end? How dangerous is it to use a portable generator? How to properly fix top portion of double hung window? 120v timer ? What happens if I mark an item as out of stock on Facebook marketplace? Terms ・ Privacy ・ AdChoices ・ RSS ・ Help About Answers ・ Community Guidelines ・ Leaderboard ・ Knowledge Partners ・ Points & Levels Send Feedback ・ International Sites

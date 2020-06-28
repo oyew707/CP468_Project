@@ -1,0 +1,40 @@
+How many fundamental notes can be produed by a three-valve trumpet? why? | Yahoo Answers Home Mail News Sports Finance Celebrity Style Movies Weather Mobile Ask Sign in Mail All Categories Arts & Humanities Beauty & Style Business & Finance Cars & Transportation Computers & Internet Consumer Electronics Dining Out Education & Reference Entertainment & Music Environment Family & Relationships Food & Drink Games & Recreation Health Home & Garden Local Businesses News & Events Pets Politics & Government Pregnancy & Parenting Science & Mathematics Social Science Society & Culture Sports Travel Yahoo Products vena.cava vena.cava
+asked in
+Science & Mathematics Physics
+·
+1 decade ago How many fundamental notes can be produed by a three-valve trumpet? why? Answer Save 7 Answers Relevance duetrombe 1 decade ago Favorite Answer There are seven fundamental notes on a three valve trumpet.
+Starting with: C
+-
+fingered
+( 0 ) B
+-
+fingered
+( 2 ) Bb/A#
+-
+fingered
+( 1 ) A
+-
+fingered
+( 12 ) or ( 3 ) roughly the same length Ab/G#
+-
+fingered
+( 23 ) G
+-
+fingered
+( 13 ) Gb/F#
+- fingered
+( 123 ) There is no fundamental F, E, Eb/D#, D, or Db/C#.
+These notes are produced as part of the natural harmonic series of the other notes.
+For example, you can play the F on the first space of the staff because it is part of the series that starts on Bb and you can play the E on the first line as it is in the A series.
+You would need a four valve instrument to have fundamental notes on all 12 notes in the scale. P.S. Bugles have only one fundamental note.
+All the notes above it are based on that note.
+They are called harmonics or partials.
+The 1st partial in the series is the fundamental note, whereas the 1st harmonic is the 2nd note in the series.
+A three valve trumpet is made up of seven of these fundamental "bugles." Source(s):
+Professional trumpet player and teacher. 0 1 0 Login to reply the answers Post HooKooDooKu Lv
+6 1 decade ago This is a poorly worded question, because it seems to be mixing questions regarding valve positions and how a trumpet makes music. Trumpets make sounds by a combination of valve positions (fingering) AND the way you blow into it (embouchure). It turns out that you can play some of the same notes with a different combination of fingering and embouchure. If it helps, think of a bugle.
+It's very similar to a trumpet, except that it has no fingering valves.
+The change is pitch is ONLY controled by embouchure, yet a bugel has more than just one fundamental note. 0 0 0 Login to reply the answers Post Anonymous 1 decade ago I dont know the exact number but i do play trumpet and u can get a higher or lower note with the same number of valves but u change ur lips and tounge hope this is useful 0 0 0 Login to reply the answers Post thats pretty spiffy!!!! 1 decade ago 12 0 0 1 Login to reply the answers Post How do you think about the answers? You can sign in to vote the answer. Sign in Tetley 1 decade ago the answer is 2^3 or 8 there are 2 positions of each valve and 3 valves therefore the number of combinations is 8.
+Which also kinda goes hand in hand that there are 8 notes in an octave. =P 0 0 0 Login to reply the answers Post Anonymous 1 decade ago i think it like 42. to get different notes, ur embouchure has to change 0 0 1 Login to reply the answers Post schoolgirl 1 decade ago dk 0 0 1 Login to reply the answers Post Still have questions? Get your answers by asking now. Ask Question + 100 Join Yahoo Answers and get 100 points today. Join Trending Questions Trending Questions Has anyone ever noticed in Star Wars going to light speed makes you go very fast but in real life it takes light speed three minutes to mars? 11 answers When physicists use the word "force", isn't that just a slight-of-hand? 5 answers Physics questions : You drop a ball from a 100m tall building.
+How long does it take to hit the ground?
+What is its velocity when it hits? 6 answers how can time be the 4th dimension? 10 answers Is the universes edge truly infinite? How is that possible? 7 answers Answer Questions Answer Questions oil (specific gravity =0.8) is flowing through a 6 inch  pipe with a velocity of 56.7ft/sec. What is the flow rate of the oil in m^3/sec? Physics homework help please? The inside diameter of the pipe is 100 mm. the water jet has diameter 50 mm the pressure at is 500 Pa. determine the water jet's velocity. ? Can someone explain how they got to that last equation? Physics - Rotational Motion? Terms ・ Privacy ・ AdChoices ・ RSS ・ Help About Answers ・ Community Guidelines ・ Leaderboard ・ Knowledge Partners ・ Points & Levels Send Feedback ・ International Sites

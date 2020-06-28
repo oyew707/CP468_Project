@@ -1,0 +1,13 @@
+keyboard will not work? | Yahoo Answers Home Mail News Sports Finance Celebrity Style Movies Weather Mobile Ask Sign in Mail All Categories Arts & Humanities Beauty & Style Business & Finance Cars & Transportation Computers & Internet Consumer Electronics Dining Out Education & Reference Entertainment & Music Environment Family & Relationships Food & Drink Games & Recreation Health Home & Garden Local Businesses News & Events Pets Politics & Government Pregnancy & Parenting Science & Mathematics Social Science Society & Culture Sports Travel Yahoo Products 4053 4053
+asked in
+Computers & Internet Hardware Other - Hardware
+·
+8 years ago keyboard will not work? Answer Save 1 Answer Relevance sailorbeavis Lv
+6 8 years ago Favorite Answer If it's a USB keyboard, unplug the keyboard and plug it back in.
+If it still doesn't respond, and you don't hear the Windows "USB Device Inserted" noise, shut the computer off, and make sure there's no debris in the connector on the keyboard cable.
+Plug it back in and reboot.
+Sometimes the USB drivers in Windows go out to lunch and you have to do that.
+If it still doesn't work, try a different USB port. If it's a PS/2 keyboard, then shut the computer down before you remove the cable.
+Check to make sure none of the six pins are bent or broken. If it's a Bluetooth keyboard, make sure your Bluetooth adapter is turned on and that you are using the correct PIN to connect the keyboard to the system.
+For any wireless keyboard, make sure you have fresh batteries installed. If none of those things work, or the device is physically damaged, it's time for a new keyboard.
+I recommend Logitech or Microsoft keyboards, personally. 0 0 0 Login to reply the answers Post Still have questions? Get your answers by asking now. Ask Question + 100 Join Yahoo Answers and get 100 points today. Join Trending Questions Trending Questions How to Transfer the Game into the External drive? 5 answers installing SAMSUNG 970 EVO PLUS M.2 2280 1TB and 2TB question.? 5 answers What is the battery on the motherboard ? 4 answers Do you use a mechanical keyboard for work? 4 answers What is the caused of the problem of a PC cannot boot? 7 answers Answer Questions Answer Questions Can I use my D drive as my C drive? Recover data from USB stick 100 percent free.? Fans, controllers and USB headers, can my motherboard handle it? Can a Asrock b450M gaming motherboard handle this ram? does 5G hurt your eyes through using an LCD screen? Terms ・ Privacy ・ AdChoices ・ RSS ・ Help About Answers ・ Community Guidelines ・ Leaderboard ・ Knowledge Partners ・ Points & Levels Send Feedback ・ International Sites
