@@ -2,26 +2,16 @@
 import requests
 from bs4 import BeautifulSoup
 from random import sample
-import os
-import numpy as np
-import os
-from nltk import word_tokenize
-import string
-import nltk, re
-from nltk.stem.wordnet import WordNetLemmatizer
-import collections
-import gensim
-from nltk.corpus import stopwords
-from nltk.tokenize import sent_tokenize
-from gensim.test.utils import common_texts
-from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.feature_extraction import text
 from sklearn.metrics import accuracy_score, precision_score, recall_score
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB, MultinomialNB
-
+from sklearn.svm import SVC
+from application import save_cat, save_model, save_featurex
+import json
+import pickle
 
 # functions and cells
 def cleanMe(html):  # from https://github.com/jamesacampbell/python-examples/blob/8dfbfc82c2aaa7fb17d0ad0086d781398d5812ae/html2plaintext-example.py
@@ -107,6 +97,7 @@ for i in topics:
             except:
                 print('src/Document_Folder/' + i + '/' + j)
 
+categories = {value: key for key, value in categories.items()}
 # Feature Extraction
 
 my_words = ['question',
@@ -213,28 +204,33 @@ vectorizer4 = CountVectorizer(strip_accents='ascii', min_df=1, stop_words=my_sto
 vec = [vectorizer1, vectorizer2, vectorizer3, vectorizer4]
 
 # Models
-
 def my_KNN(X_train, X_test, y_train, y_test):
-    # K-nearest Neighbour using cosine-similarity
-    model = KNeighborsClassifier(metric='cosine', algorithm='brute', weights='uniform')
+    #K-nearest Neighbour using cosine-similarity
+    model = KNeighborsClassifier(metric = 'cosine', algorithm = 'brute', weights = 'uniform')
     model.fit(X_train, y_train)
     pred = model.predict(X_test)
-    return accuracy_score(y_test, pred), model
+    return accuracy_score(y_test, pred), precision_score(y_test, pred, average = "weighted"), recall_score(y_test, pred, average = "weighted"), model
 
 def my_KNN1(X_train, X_test, y_train, y_test):
-    # K-nearest Neighbour using euclidean dist
-    # model = KNeighborsClassifier(n_neighbors=len(set(categories)), metric = 'cosine', algorithm = 'brute', weights = 'distance')
-    model = KNeighborsClassifier(weights='uniform')
+    #K-nearest Neighbour using euclidean dist
+    #model = KNeighborsClassifier(n_neighbors=len(set(categories)), metric = 'cosine', algorithm = 'brute', weights = 'distance')
+    model = KNeighborsClassifier( weights = 'uniform')
     model.fit(X_train, y_train)
     pred = model.predict(X_test)
-    return accuracy_score(y_test, pred), model
+    return accuracy_score(y_test, pred), precision_score(y_test, pred, average = "weighted"), recall_score(y_test, pred, average = "weighted"), model
 
 def my_MNB(X_train, X_test, y_train, y_test):
-    # Multinomial Naive bayes
+    #Multinomial Naive bayes
     clf = MultinomialNB()
     clf.fit(X_train.toarray(), y_train)
     pred = clf.predict(X_test.toarray())
-    return accuracy_score(y_test, pred), clf
+    return accuracy_score(y_test, pred), precision_score(y_test, pred, average = "weighted"), recall_score(y_test, pred, average = "weighted"), clf
+
+def my_SVM(X_train, X_test, y_train, y_test):
+    svm = SVC(kernel = 'linear')
+    svm.fit(X_train, y_train)
+    pred = svm.predict(X_test)
+    return accuracy_score(y_test, pred), precision_score(y_test, pred, average = "weighted"), recall_score(y_test, pred, average = "weighted"), svm
 
 import warnings
 
@@ -242,6 +238,12 @@ warnings.filterwarnings('ignore')
 for i in vec:
     X = i.fit_transform(documents)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=0)
-    print("KNN cosine ->", my_KNN(X_train, X_test, y_train, y_test)[0],
-          "KNN minkowski ->", my_KNN1(X_train, X_test, y_train, y_test)[0],
-          "Multinomial Naive bayes ->", my_MNB(X_train, X_test, y_train, y_test)[0], )
+    print("KNN cosine ->", my_KNN(X_train, X_test, y_train, y_test),
+          "\tKNN minkowski ->", my_KNN1(X_train, X_test, y_train, y_test),
+          "\tMultinomial Naive bayes ->", my_MNB(X_train, X_test, y_train, y_test),
+          "\tSUpport Vector Machine ->", my_SVM(X_train, X_test, y_train, y_test), "\n" )
+
+model = my_SVM(X_train, X_test, y_train, y_test)[-1]
+save_cat(categories)
+save_model(model)
+save_featurex(vectorizer4)
