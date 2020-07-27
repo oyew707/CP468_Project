@@ -20,30 +20,27 @@
         </form>
     </div>
 </nav>
-    <main>
-        <div class="row">
-            <div class = "col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header">
-                        Categories
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        {% for cat in categories %}
-                        <li class="list-group-item"> {{ categories[cat] }}</li>
-                        {% endfor %}
-                    </ul>
+<main>
+    <div class="row">
+        <div class = "col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    Categories
                 </div>
-            </div>
-            <div class = "col-auto mr-auto">
-                <h1> Category - {{ Category}}</h1>
-                <p>
-                    {% for line in Document %}
-                    {{ line }} <br />
+                <ul class="list-group list-group-flush">
+                    {% for cat in categories %}
+                    <li class="list-group-item"> {{ categories[cat] }}</li>
                     {% endfor %}
-                </p>
+                </ul>
             </div>
         </div>
-    </main>
+        <div class = "col-auto mr-auto">
+            <p>
+                IDk Describe the page
+            </p>
+        </div>
+    </div>
+</main>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
