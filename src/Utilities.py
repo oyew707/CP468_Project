@@ -11,9 +11,16 @@ __updated__ = "2020-04-20"
 # Imports
 import json
 from bs4 import BeautifulSoup
+from urllib.parse import urlparse
 import pickle
 import requests
 
+def is_url(url):
+    try:
+        result = urlparse(url)
+        return all([result.scheme, result.netloc])
+    except ValueError:
+        return False
 
 def process(url):
     page = requests.get(url,timeout=60)

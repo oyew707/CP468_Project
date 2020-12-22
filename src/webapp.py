@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from src.Utilities import load_cat, load_model, process, load_featurex
+from src.Utilities import load_cat, load_model, process, load_featurex, is_url
 import re
 import os
 
@@ -24,15 +24,20 @@ def model_info():
 def my_prediction():
     categories = load_cat()
     categories = {key: value.replace("_", " ") for key, value in categories.items()}
-    url = request.form["searchbar"]
-    doc = process(url)
-    if doc != "Error: Cannot read URL/Webpage":
-        vec1 = load_featurex().transform([doc])
-        model = load_model()
-        pred1 = categories[str(model.predict(vec1)[0]-1)]
-        doc = re.findall('................................................?', doc)
-    else:
-        doc = [doc]
+
+    try:
+        url = request.form["searchbar"]
+        if is_url(url): doc = process(url)
+        if doc != "Error: Cannot read URL/Webpage" and is_url(url):
+            vec1 = load_featurex().transform([doc])
+            model = load_model()
+            pred1 = categories[str(model.predict(vec1)[0] - 1)]
+            doc = re.findall('................................................?', doc)
+        else:
+            doc = [doc]
+            pred1 = ""
+    except:
+        doc = ["Internal Error, Please contact server Admin oyew7070@mylaurier.ca "]
         pred1 = ""
     return render_template('layout.html', categories=categories, Document=doc, Category=pred1)
 
