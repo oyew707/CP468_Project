@@ -130,7 +130,7 @@ X = vec[floor(15/4)].transform(documents)
 train_sizes, train_scores, valid_scores = learning_curve(SVC(kernel = 'linear'), X, y, train_sizes=list(range(50,550,50)), cv=5)
 ax = sns.lineplot(x = list(range(50,550,50)), y = np.mean(train_scores, axis=1))
 ax = sns.lineplot(x = list(range(50,550,50)), y = np.mean(valid_scores, axis=1), ax = ax, legend = "brief")
-ax.show()
+ax
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state = 8)
 accuracy_s, precision_s, recall_s, model = my_SVM(X_train, X_test, y_train, y_test)
